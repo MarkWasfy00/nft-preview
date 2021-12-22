@@ -44,9 +44,6 @@ body{
         padding: 20px;
         
         .nft-photo{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
             background-image: url(./images/image-equilibrium.jpg);
             background-size: cover;
             width: 100%;
@@ -96,7 +93,6 @@ body{
 
             .ETH{
                 display: flex;
-                flex-direction: row;
                 align-items: center;
                 .eth-photo{
                     padding-right: 5px;
@@ -111,7 +107,6 @@ body{
             }
             .time{
                 display: flex;
-                flex-direction: row;
                 align-items: center;
                 .time-photo{
                    padding-right: 5px;
@@ -131,7 +126,6 @@ body{
         .line{
             width: 90%;
             height: 1px;
-            color: $Soft-blue;
             border-bottom: 1px solid rgba($Soft-blue,.2);
             margin: 10px;
             

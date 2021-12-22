@@ -35,15 +35,6 @@ body {
   padding: 20px;
 }
 .container .holder .nft-photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-image: url(./images/image-equilibrium.jpg);
   background-size: cover;
   width: 100%;
@@ -94,10 +85,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -116,10 +103,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -137,7 +120,6 @@ body {
 .container .holder .line {
   width: 90%;
   height: 1px;
-  color: #8bacda;
   border-bottom: 1px solid rgba(139, 172, 218, 0.2);
   margin: 10px;
 }
