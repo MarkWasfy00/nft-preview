@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0d192b;
+}
+
+.container {
+  background-color: #14253d;
+  border-radius: 10px;
+  max-width: 300px;
+  min-height: 500px;
+}
+.container .holder {
+  padding: 20px;
+}
+.container .holder .nft-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+}
+.container .holder .nft-photo:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 247, 0.5)), to(rgba(0, 255, 247, 0.5))), url(./images/image-equilibrium.jpg), url(./images/icon-view.svg);
+  background-image: linear-gradient(to bottom, rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)), url(./images/image-equilibrium.jpg), url(./images/icon-view.svg);
+  cursor: pointer;
+}
+.container .holder .nft-photo:hover::after {
+  content: "";
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.container .holder .title .headline {
+  padding-top: 20px;
+}
+.container .holder .title .headline a {
+  text-decoration: none;
+  color: white;
+}
+.container .holder .title .headline a:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+.container .holder .title p {
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #8bacda;
+}
+.container .holder .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0 5px;
+}
+.container .holder .info .ETH {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .holder .info .ETH .eth-photo {
+  padding-right: 5px;
+}
+.container .holder .info .ETH .eth-photo img {
+  width: 0.5rem;
+}
+.container .holder .info .ETH .ETH-coins {
+  color: #00fff7;
+  font-size: 0.8rem;
+}
+.container .holder .info .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .holder .info .time .time-photo {
+  padding-right: 5px;
+}
+.container .holder .info .time .time-photo img {
+  width: 0.8rem;
+}
+.container .holder .info .time .time-number {
+  font-size: 0.8rem;
+  color: #8bacda;
+}
+.container .holder .line {
+  width: 90%;
+  height: 1px;
+  color: #8bacda;
+  border-bottom: 1px solid rgba(139, 172, 218, 0.2);
+  margin: 10px;
+}
+.container .holder .author-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+.container .holder .author-name .author-img {
+  padding-right: 10px;
+  width: 35px;
+}
+.container .holder .author-name .author-img img {
+  width: 100%;
+  border: 1px white solid;
+  border-radius: 50%;
+}
+.container .holder .author-name p {
+  font-size: 0.7rem;
+  color: #8bacda;
+}
+.container .holder .author-name p a {
+  color: white;
+  text-decoration: none;
+}
+.container .holder .author-name p a:hover {
+  color: #00fff7;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+// font-family: 'Outfit', sans-serif;
+
+
+
+// Primary
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Cyan-trans : rgba(0, 255, 247, 0.5);
+
+// Neutral
+$dark-blue : hsl(217, 54%, 11%); // (main BG)
+$Very-dark-blue : hsl(216, 50%, 16%); // (card BG)
+$open-dark-blue : hsl(215, 32%, 27%); // (line)
+$White: hsl(0, 0%, 100%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-blue;
+    
+}
+
+.container{
+    background-color: $Very-dark-blue;
+    border-radius: 10px;
+    max-width: 300px;
+    min-height: 500px;
+    .holder {
+        padding: 20px;
+        
+        .nft-photo{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-image: url(./images/image-equilibrium.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            position: relative;
+            &:hover{
+                background-image: linear-gradient(to bottom , $Cyan-trans , $Cyan-trans) ,url(./images/image-equilibrium.jpg),url(./images/icon-view.svg);
+                cursor: pointer;
+                &::after{
+                    content: '';
+                    background-image: url(./images/icon-view.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+            
+        }
+
+        .title{
+            .headline{
+                padding-top: 20px;
+                a{
+                    text-decoration: none;
+                    color: $White;
+                    &:hover{
+                        color: $Cyan;
+                        cursor: pointer;
+                    }
+                }
+            }
+            p{
+                padding-top: 20px;
+                font-size: .8rem;
+                color: $Soft-blue;
+            }
+        }
+
+        .info{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0 5px;
+
+            .ETH{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .eth-photo{
+                    padding-right: 5px;
+                    img{
+                        width: .5rem;
+                    }
+                }
+                .ETH-coins{
+                    color: $Cyan;
+                    font-size: .8rem;
+                }
+            }
+            .time{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .time-photo{
+                   padding-right: 5px;
+                    img{
+                        width: .8rem;
+                    }
+                }
+                .time-number{
+                    
+                    font-size: .8rem;
+                    color: $Soft-blue;
+                }
+                
+            }
+        }
+
+        .line{
+            width: 90%;
+            height: 1px;
+            color: $Soft-blue;
+            border-bottom: 1px solid rgba($Soft-blue,.2);
+            margin: 10px;
+            
+        }
+
+        .author-name{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 5px;
+            .author-img{
+                padding-right: 10px;
+                width: 35px;
+                img{
+                    width: 100%;
+                    border: 1px $White solid;
+                    border-radius: 50%;
+                }
+            }
+            p{
+                font-size: .7rem;
+                color: $Soft-blue;
+                a{
+                    color: $White;
+                    text-decoration: none;
+                    &:hover{
+                        color: $Cyan;
+                        cursor: pointer;
+                    }
+                    
+                }
+            }
+        }
+        
+
+
+    }
+    
+}
